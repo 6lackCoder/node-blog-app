@@ -11,8 +11,7 @@ const app = express();
 
 // connect to mongodb
 
-const dbURI =
-  "mongodb+srv://Mustapha:segunObasanjo12@nodeproject.3lwpmve.mongodb.net/Blog?retryWrites=true&w=majority";
+const dbURI = ''
   mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(3000) )
   .catch((err) => console.log(err) )
